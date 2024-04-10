@@ -1,6 +1,8 @@
 import { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import todoRouter from "./todoRouter";
+
+
 const Loading=<div classNmae={'bg-red-700'}>Loading....</div>
 
 const Main=lazy(()=>import("../pages/MainPage"))

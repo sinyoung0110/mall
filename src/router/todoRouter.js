@@ -11,23 +11,23 @@ const TodoModify = lazy(() => import("../pages/todo/ModifyPage"))
 const todoRouter = () => {
     return [
         {
-          path: "list",
+          path: 'list',
           element: <Suspense fallback={Loading}><TodoList/></Suspense>
         },
         {
-          path: "",
-          element: <Navigate replace to="list"/>
+          path: '',
+          element: <Navigate replace={true} to={'list'}/>
         },
         {
-          path: "read/:tno",
+          path: 'read/:tno',
           element: <Suspense fallback={Loading}><TodoRead/></Suspense>
         },
         {
-          path: "add",
+          path: 'add',
           element: <Suspense fallback={Loading}><TodoAdd/></Suspense>
         },
         {
-          path: "modify/:tno",
+          path: 'modify/:tno',
           element: <Suspense fallback={Loading}><TodoModify/></Suspense>
         }
     
