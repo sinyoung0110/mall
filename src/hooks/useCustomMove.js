@@ -28,13 +28,17 @@ const useCustomMove=()=>{
             const sizeNum=getNum(pageParam.size,10)
 
             queryStr=createSearchParams({page:pageNum, size:sizeNum}).toString()
+           
         }else{
             queryStr=queryDefault
+        
+
         }
+        
 
         setRefresh(!refresh)
-
-        navigate({pathname:`../list`,search:queryDefault})
+        
+        navigate({pathname:`../list`,search:queryStr})
     }
 
     const moveToModify=(num)=>{
