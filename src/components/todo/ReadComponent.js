@@ -28,7 +28,8 @@ function ReadComponent({tno}) {
         {makeDiv('Tno', todo.tno)}
         {makeDiv('Writer', todo.writer)}
         {makeDiv('Title', todo.title)}
-        {makeDiv('Title', todo.complete ? 'Completed' : 'Not Yet')}
+        {makeDiv('Due Date',todo.dueDate)}
+        {makeDiv('Complete', todo.complete ? 'Completed' : 'Not Yet')}
 
         <div className="flex justify-end p-4">
             <button type="button" className="rounded p-4 m-2 text-xl w-32 text-white bg-blue-500" onClick={() => moveToList()}>List</button>

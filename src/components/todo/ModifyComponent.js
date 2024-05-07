@@ -108,9 +108,9 @@ Delete </button>
 <button type="button" className="rounded p-4 m-2 text-xl w-32 text-white bg-blue-500"
 onClick={handleClickModify}> Modify </button>
 </div>
-    { result ? <ResultModal title={'처리결과'} content={result} callbackFn={closemodal}></ResultModal> :<></>}
+    { result ? <ResultModal title={'처리결과'} content={result} callbackFn={closeModal}></ResultModal> :<></>}
 </div>
 );
 } 
 
-export default ModifyComponent;
+export default ModifyComponent

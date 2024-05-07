@@ -70,7 +70,8 @@ className="rounded p-4 w-36 bg-blue-500 text-xl text-white" > ADD </button>
     title={'Add Result'}
     content={`New ${result} Added`}
     callbackFn={closeModal}
-    />:<></>}
+/>
+:<></>}
 </div>
     
     );

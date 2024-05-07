@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useCallback } from "react";
 import {useNavigate, useSearchParams,createSearchParams} from "react-router-dom";
 
 const getNum=(param,defaultValue)=>{
@@ -31,8 +31,6 @@ const useCustomMove=()=>{
            
         }else{
             queryStr=queryDefault
-        
-
         }
         
 
@@ -46,6 +44,7 @@ const useCustomMove=()=>{
             pathname:`../modify/${num}`,
             search:queryDefault
         })
+    
     }
 
     const moveToRead=(num)=>{
